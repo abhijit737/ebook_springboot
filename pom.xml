@@ -100,7 +100,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		
+		<finalName>ebookspringboot</finalName>
 	</build>
 
 </project>
