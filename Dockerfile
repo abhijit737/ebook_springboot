@@ -9,5 +9,5 @@ RUN mvn clean package -Pprod -DskipTests
 # Package stage
 #
 FROM openjdk:11-jdk-slim
-COPY --from=build /target/ebookspringboot-0.0.1-SNAPSHOT.jar ebookspringboot.jar
+COPY --from=build /target/ebookspringboot.jar ebookspringboot.jar
 ENTRYPOINT ["java","-jar","ebookspringboot.jar"]
